@@ -439,6 +439,764 @@
         <p><strong class="bigger" id="mains-music">My experience:</strong> I use this soundtrack as a method to do a shamanic journey. The drumming in the music helps so much do it. This is one of the best ways to meditate and pray for god for me. It is so <em><strong>powerful</strong></em> and has <em><strong> healing </strong></em> properties. Who doesn't like visiting the upper world and take advice from the <em>great spirits</em> out there. <p id="important-sentence">This <em>should</em> be a music for everyone looking for the truth to enter the home of <strong>god</strong></p>. It <em>expanded</em> my consciousness and took it to the next level. I received many answers of questions that i was wondering through <strong>shamanic journeying</strong>. I knew the true nature of reality and got inspirations from <em>divine</em> entities and figures. I had knowledge about exsitence and how the universe works. It is like an <em>infinite</em> book that gives you the opportunities to read the whole existence. My experience is totally <strong class="bigger">ecstatic</strong> and full of pleasure. The music took me to deep <em>higher </em>dimensions and wonderful realms. Until then, i reached a place where it is abstracted from all the dimensions, which is the <em>ancient home of light.</em></p>
         
         <br> 
+
+var shelfposY = 110;
+var shelfQuan = 3;
+
+var theBooks = [
+    {
+    title: "Harry Potter ",
+    subtitle: "And the Deathly Hallows",
+    stars: 5
+    
+    },
+    {
+    title: "The Way of the Shaman",
+    subtitle: "A journey for healing",
+    stars: 5,
+    
+    },
+    {
+    title: "Love, freedom, aloneness", 
+    subtitle: "The koan of relationships",
+    stars: 4
+    },
+    ];
+    
+// draw the shelfs
+for (var l = 0; l < shelfQuan; l++) {
+fill(194, 133, 41);
+rect(0, shelfposY, width, 10);
+shelfposY += 109;
+}
+
+var drawRow = function(xPos, yPos) {
+    
+// draw the books
+for( var l = 0; l < theBooks.length; l++) {
+fill(203, 196, 242);
+rect(l * 134 + xPos + 5 , yPos + 5, 90, 100);
+fill(0, 0, 0);
+textSize(12);
+text(theBooks[l].title, l * 140 + xPos + 23, yPos + 12, 70, 100);
+textSize(11);
+text(theBooks[l].subtitle, l * 131 + xPos + 21, yPos + 59, 77, 99);
+for (var i = 0; i < theBooks[l].stars; i++) {
+    image(getImage("cute/Star"), l * 131 + xPos + 10, i * 15 + yPos + -2 , 12, 26);
+}
+
+}
+
+};
+
+drawRow(7, 4);
+drawRow(19, 113);
+drawRow(0, 222);
+drawRow(8, 222);
+drawRow(16, 222);
+drawRow(24, 222);
+drawRow(32, 222);
+                                      
+                                      <!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+        body { background-color: rgb(139, 143, 240);}
+        h1 { color: rgb(189, 24, 24);}
+        
+        
+        </style>
+    </head>
+    <body>
+       
+        <h1>Fancy Tasty's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a href="#Chicken-Tikka -Masala">Chicken Tikka Masala</a></li>
+            <li><a href="#Grilled-Salmon">Grilled Salmon</a></li>
+            <li><a href="#Garlic-Butter-Shrimp">Garlic Butter Shrimp</a></li>
+        </ol>
+        
+        <h2 id="Chicken-Tikka-Masala">Chicken Tikka Masala</h2>
+        
+        <ul>
+            <li>Time: Active: 1 HOURS. Total: 5½ HOURS. </li>
+            <li>Serves: 6</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients    </th>
+                    <th>Quantity</th>
+                </tr>
+                
+                  <tr>
+                    <td>garlic cloves, finely grated</td>
+                    
+                    <td>6</td>
+                </tr>
+                
+                  <tr>
+                    <td>teaspoons finely grated peeled ginger</td>
+                    
+                    <td>4</td>
+                </tr>
+                
+                  <tr>
+                    <td>teaspoons ground turmeric</td>
+                    
+                    <td>4</td>
+                </tr>
+                
+                  <tr>
+                    <td>teaspoons garam masala</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>teaspoons ground coriander</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>teaspoons ground cumin</td>
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>cups whole-milk yogurt (not Greek)</td>
+                    
+                    <td>1½</td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoon kosher salt</td>
+                   
+                    <td>1</td>
+                </tr>
+                
+                  <tr>
+                    <td>pounds skinless, boneless chicken breasts, halved lengthwise</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons ghee (clarified butter) or vegetable oil</td>
+                  
+                    <td>3</td>
+                </tr>
+                
+                  <tr>
+                    <td> small onion, thinly sliced</td>
+                    
+                    <td>1</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup tomato paste</td>
+                   
+                    <td>¼</td>
+                </tr>
+                
+                  <tr>
+                    <td>cardamom pods, crushed</td>
+                    
+                    <td>6</td>
+                </tr>
+                
+                  <tr>
+                    <td>dried chiles de árbol or teaspoons crushed red pepper flakes</td>
+                    
+                    <td>2 or 1/2</td>
+                </tr>
+                
+                  <tr>
+                    <td>28-ounce can whole peeled tomatoes</td>
+                    
+                    <td>1</td>
+                </tr>
+                
+                  <tr>
+                    <td>cups heavy cream</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup chopped fresh cilantro plus sprigs for garnish</td>
+                    
+                    <td>¾</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            
+        </table>
+        
+          <tr>
+                    <td>Steamed basmati rice (for serving)</td>
+                    
+                    <td>
+                    t
+                    </td>
+                </tr>
+                
+                  
+        <p><strong>Step 1:</strong> Combine garlic, ginger, turmeric, garam masala, coriander, and cumin in a small bowl. Whisk yogurt, salt, and half of spice mixture in a medium bowl; add chicken and turn to coat. Cover and chill 4-6 hours. Cover and chill remaining spice mixture.
+</p>
+
+<p><strong>Step 2:</strong> Heat ghee in a large heavy pot over medium heat. Add onion, tomato paste, cardamom, and chiles and cook, stirring often, until tomato paste has darkened and onion is soft, about 5 minutes. Add remaining half of spice mixture and cook, stirring often, until bottom of pot begins to brown, about 4 minutes.
+</p>
+
+<p><strong>Step 3:</strong> Add tomatoes with juices, crushing them with your hands as you add them. Bring to a boil, reduce heat, and simmer, stirring often and scraping up browned bits from bottom of pot, until sauce thickens, 8-10 minutes.
+</p>
+
+<p><strong>Step 4:</strong> Add cream and chopped cilantro. Simmer, stirring occasionally, until sauce thickens, 30-40 minutes.
+</p>
+
+<p><strong>Step 5:</strong> Meanwhile, preheat broiler. Line a rimmed baking sheet with foil and set a wire rack inside sheet. Arrange chicken on rack in a single layer. Broil until chicken starts to blacken in spots (it will not be cooked through), about 10 minutes.
+</p>
+
+<p><strong>Step 6:</strong> Cut chicken into bite-size pieces, add to sauce, and simmer, stirring occasionally, until chicken is cooked through, 8-10 minutes. Serve with rice and cilantro sprigs.
+
+
+</p>
+
+<p><strong>Do ahead:</strong>
+Chicken can be made 2 days ahead. Cover; chill. Reheat before serving.
+</p>
+
+
+        
+    <p><em>Source: <a href="http://www.bonappetit.com/recipe/chicken-tikka-masala">bonappetit</a></em></p>
+    
+    </body>
+    
+    <h2 id="Grilled-Salmon">Grilled Salmon</h2>
+    
+    <ul>
+            <li>Time: Active: 15 minutes. Total: 35 minutes. </li>
+            <li>Serves: 4</li>
+        </ul>
+     <table>
+            <thead>
+                <tr>
+                    <th>Ingredients    </th>
+                    <th>Quantity</th>
+                </tr>
+                
+                  <tr>
+                    <td>cups orzo</td>
+                    
+                    <td>1 1/2</td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons red wine vinegar</td>
+                    
+                    <td>3</td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons finely chopped shallots</td>
+                    
+                    <td>3</td>
+                </tr>
+                
+                  <tr>
+                    <td>garlic cloves, finely chopped</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup extra-virgin olive oil</td>
+                    
+                    <td>1/3</td>
+                </tr>
+                
+                  <tr>
+                    <td>Kosher salt and freshly ground black pepper</td>
+                    <td></td>
+                </tr>
+                
+                  <tr>
+                    <td>fresh baby spinach (about 3 cups not packed)</td>
+                    
+                    <td>2 ounces</td>
+                </tr>
+                
+                  <tr>
+                    <td>cups grape tomatoes, cut in halft</td>
+                   
+                    <td>1 1/2</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup pine nuts, toasted (see Kitchen Note)</td>
+                    
+                    <td>1/2</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup thinly sliced fresh basil leaves</td>
+                  
+                    <td>1/4</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup crumbled feta cheese (4 ounces)</td>
+                    
+                    <td>1</td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons chopped fresh chives, for garnish</td>
+                   
+                    <td>2</td>
+                </tr>
+                
+                  <tr>
+                    <td>5-ounce skinless salmon fillets</td>
+                    
+                    <td>4</td>
+                </tr>
+                
+                  <tr>
+                    <td>Olive oil, for coating the fish</td>
+                    
+                    <td></td>
+                </tr>
+                
+                  <tr>
+                    <td>Kosher salt and freshly ground black pepper</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                            <p><strong>Step 1:</strong> Prepare an outdoor grill for medium- high cooking over direct heat.
+</p>
+
+<p><strong>Step 2:</strong>  Meanwhile, make the orzo salad: Bring a large saucepan of salted water to a boil over high heat. Add the orzo and cook, stirring often, for about 8 minutes, or until just tender. Drain the orzo in a sieve and set aside.
+</p>
+
+<p><strong>Step 3:</strong> In a medium bowl, whisk the vinegar, shallots, and garlic together. Gradually whisk in the olive oil. Season to taste with salt and pepper.
+</p>
+
+<p><strong>Step 4:</strong> In a large bowl, toss the warm orzo, spinach, tomatoes, pine nuts, and basil with the vinaigrette. Season to taste with salt and pepper. Set aside at room temperature.
+</p>
+
+<p><strong>Step 5:</strong> To cook the salmon: Coat the salmon with olive oil and season with salt and pepper. Oil the cooking grate. Place the salmon on the grill with the top right corner of each fillet facing the 2-o'clock position and cook for 4 minutes, without moving the salmon. (This will help give the salmon a good sear of nice grill marks and help it release from the grate.) Using a thin metal spatula, starting at the corner of each fillet nearest you, flip the fillets over. Grill for about 2 minutes, or until the fish is opaque with a slightly rosy center when flaked in the thickest part with the tip of a small knife. Remove from the grill.
+</p>
+
+<p><strong>Step 6:</strong> Mound the salad in the center of a large serving platter or four dinner plates. Sprinkle with the feta cheese. Top with the salmon, sprinkle with the chives, and serve.
+
+
+</p>
+                    
+     <p><em>Source: <a href="http://www.epicurious.com/recipes/food/views/grilled-salmon-with-orzo-feta-and-red-wine-vinaigrette-51163620">epicurious</a></em></p>
+     
+     <h2 id="Garlic-Butter-Shrimp">Garlic Butter Shrimp</h2>
+    
+    <ul>
+            <li>Time: Prep: 10 minutes. Total: 20 minutes. Cook:10 minutes </li>
+            <li>Serves: 4</li>
+        </ul>
+     <table>
+            <thead>
+                <tr>
+                    <th>Ingredients    </th>
+                    <th>Quantity</th>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons (1 stick) unsalted butter, divided  </td>
+                    
+                    <td>8</td>
+                </tr>
+                
+                  <tr>
+                    <td>pounds medium shrimp, peeled and deveined</td>
+                    
+                    <td>1 1/2</td>
+                </tr>
+                
+                  <tr>
+                    <td>Kosher salt and freshly ground black pepper, to taste</td>
+                    
+                    <td></td>
+                </tr>
+                
+                  <tr>
+                    <td>cloves garlic, minced</td>
+                    
+                    <td>5</td>
+                </tr>
+                
+                  <tr>
+                    <td>cup chicken stock</td>
+                    
+                    <td>1/4</td>
+                </tr>
+                
+                  <tr>
+                    <td>Juice of 1 lemon, or more, to taste</td>
+                    <td></td>
+                </tr>
+                
+                  <tr>
+                    <td>tablespoons chopped fresh parsley leaves</td>
+                    
+                    <td>2</td>
+                </tr>
+                
+                 
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    </table>
+                    
+                            <p><strong>Step 1:</strong> Melt 2 tablespoons butter in a large skillet over medium high heat.
+</p>
+
+<p><strong>Step 2:</strong> Add shrimp, salt and pepper, to taste. Cook, stirring occasionally, until pink, about 2-3 minutes; set aside.
+</p>
+
+<p><strong>Step 3:</strong> Add garlic to the skillet, and cook, stirring frequently, until fragrant, about 1 minute. Stir in chicken stock and lemon juice. Bring to a boil; reduce heat and simmer until reduced by half, about 1-2 minutes. Stir in remaining 6 tablespoons butter, 1 tablespoon at a time, until melted and smooth.
+</p>
+
+<p><strong>Step 4:</strong> Stir in shrimp and gently toss to combine.
+</p>
+
+<p><strong>Step 5:</strong> Serve immediately, garnished with parsley leaves, if desired.
+</p>
+
+                    
+     <p><em>Source: <a href="http://damndelicious.net/2014/04/11/garlic-butter-shrimp/">damndelicious</a></em></p>
+                    
+                    
+            
+                
+</html>
+
+    // variables 
+
+var xPositions = [200, 100, 50, 200, 250, 110, 240, 40, 400, 200, 290, 130, 190, 255, 135, 122, 187, 285, 385, 384, 321, 121, 234, 101, 99];
+var yPositions = [0, 60, 260, 30, 150, 20, 170, 300, 150, 105, 360, 15, 235, 175,12, 144, 149, 183, 23, 32, 104, 78, 38, 42, 109];
+var dropX = [100];
+var dropY = [0];
+var snowX = 30;
+var snowY = 0;
+var speed = 0;
+var cloudPos = 0;
+var moverainF = 0;
+var moverainS = 0;
+var rainposY = 0;
+var rainposYS = 0;
+var movesnowF= 0;
+var snowposY = 0;
+var movesnowS = 0;
+var snowposYS = 0;
+var snowdropX = [100];
+var snowdropY = [0];
+var snowColl = 0;
+
+
+
+    // Beginning of the draw function
+
+    draw = function() {
+     
+    background(204, 247, 255);
+    
+    // Clouds
+    
+    fill(245, 245, 245);
+    noStroke();
+    
+    var drawClouds = function() {
+       
+    ellipse(90 + speed + cloudPos, 46, 128, 75);
+    ellipse(150 + speed + cloudPos, 41, 100, 64);
+    ellipse(38 + speed + cloudPos, 56, 88, 71);
+    ellipse(281 + speed + cloudPos, 56, 128, 75);
+    ellipse(346 + speed + cloudPos, 53, 100, 64);
+    ellipse(312 + speed + cloudPos, 50, 88, 71);
+    
+    };
+    
+    drawClouds();
+   
+    // Snows from sky
+
+    for (var i = 0; i < xPositions.length; i++) {
+        
+        noStroke();
+        fill(255, 255, 255);
+        ellipse(xPositions[i], yPositions[i], 9, 10);
+        yPositions[i] += 1;
+        if (yPositions[i] > 400) {
+            yPositions[i] = -35;
+        }
+    }
+    
+    // Ball of snow 
+    
+    for (var d = 0; d < dropX.length; d++) {
+        
+        noStroke(); 
+        fill(255, 255, 255);
+        ellipse(dropX[d], dropY[d], 9, 9);
+        dropY[d] += 1;
+        
+    }
+    
+    // Base for sets of snow drops 1 & 2
+    
+    for ( var s = 1; s < snowdropX.length; s++) {}
+    
+    // Set of rain drops 1
+  
+    while (d < 11) {
+        
+        noStroke();
+        fill(0, 166, 255);
+        ellipse(d*18, 100 + moverainF + rainposY, -2, 7);
+        d++;
+        moverainF += 1/15;
+        
+    }
+  
+    // Set of rain drops 2 
+
+    while (d < 19) {
+        
+        noStroke();
+        ellipse(d*21, 100 + moverainS + rainposYS , 2, 7);
+        d++;
+        moverainS += 1/20;
+        
+    }
+    
+    // Set of rain drops 1 ( previously as snow drops 1 )
+    
+    while (s < 10) {
+        
+        noStroke();
+        fill(0, 166, 255);
+        ellipse(s*19, 100 + movesnowF + snowposY, -2, 7);
+        s++;
+        movesnowF += 1/30;
+        
+    }
+    
+    // Set of rain drops 2 ( previously as snow drops 2 )
+    
+    while (s < 27) {
+        
+        noStroke();
+        fill(0, 166, 255);
+        ellipse(s*10 + 126, 100 + movesnowS + snowposYS, 2, 7);
+        s += 2;
+        movesnowS += 1/40;
+        
+    }
+    
+        // IF statements to control the movement of the snow and rain
+        
+        if (moverainF + rainposYS > 291) {
+            
+           rainposY = 109;
+           moverainF = -108;
+        }
+        
+        if (movesnowF + snowposY > 350) {
+            
+            snowposY = 109;
+            movesnowF = -108;
+        }
+        
+        if (movesnowS + snowposYS > 350) {
+            
+            snowposYS = 109;
+            movesnowS = -108;
+        }
+       
+        if (moverainS > 285) {
+            
+            moverainS = 0;
+        }
+      
+            drawClouds = speed += 2;
+      
+        if (drawClouds > 713) {
+            drawClouds++;
+            cloudPos = -297;
+             speed = -30;
+        }
+        
+        if (snowColl > 286) {
+            snowColl++;
+            snowColl -= 290;
+        }
+        
+    if (yPositions > 257) {
+        yPositions = -100;
+    }
+            
+            
+            
+      
+      // Thunder (If the user clicked the mouse on screen)
+      
+      
+      if (mouseIsPressed) {
+          
+          strokeWeight(3);
+          stroke(186, 200, 255);
+          fill(246, 245, 255);
+          line(97, 202, 144, 76);
+          line(136, 270, 116, 119);
+          line(189, 293, 109, 219);
+          line(120, 158, 92, 351);
+          
+        }
+      
+      // end of the draw function
+      
+        };
+        
+      // end of the animation
+        
+    
+    
+   
+
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+            p { color: rgb(183, 0, 255); }
+            #Eureka-song { background-color: red;}
+            
+            #Eureka-song2 { background-color: blue; }
+            
+            #Eureka-song { color: rgb(255, 255, 255); }
+            
+            #Eureka-song2 { color: rgb(255, 255, 255); }
+            
+            body { background-color: rgb(0, 0, 0);}
+            
+            h1 { color: rgb(255, 255, 255); }
+            
+            h2 { color: rgb(255, 255, 255); }
+            
+            h3 { color: rgb(255, 255, 255); }
+            
+            h4 { color: rgb(255, 255, 255); }
+            
+            #US { color: rgb(98, 250, 37); }
+            .Reasons { color: rgb(103, 54, 194); }
+            .Cities { color: rgb(183, 0, 255); }
+            #Places { color: rgb(103, 54, 194); }
+            
+            
+            
+            
+        </style>
+    </head>
+    <body>
+    
+        <h1>Travel to ....</h1>
+       <p id="US"> United States </p>
+       
+       <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"alt="The American flag. Horizontal lines and a sqaure of stars"width="100">
+        
+        <h2> Why go to America... </h2> <p> A wonderful country to live, work, and study. It is the land of the free. Follow the <strong>American dream</strong> and live a life full of joy, peace, and prosperity. America is definately a <em> <strong>must </strong></em> vist place for everyone. I would strongly recommend going there to spend your holidays. This country is a unique melthing pot of multicultural society. Here is why i see it as a good option for your traveling list:
+       </p> 
+       <ol class="Reasons">
+        
+        
+            <li>The <em>greatest</em> country in the world.</li>
+            <li> <strong>A lot</strong> of museums, parks, and famous landmarks. </li>
+            <li> <em><strong>High</strong></em> life quality standards and has good products, services, and other facilities. </li>
+            
+            <h2>Where to go...</h2>
+            <ul class="Cities">
+                <li> San Francisco. </li> 
+                <li> San Diego. </li>
+                
+                <li> Los Angelos.
+            
+            </ul>
+            
+            <h3> What to see...</h3>
+            <p id="Places">
+            Six Flags Magic Mountain.
+            <br>
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Six_Flag_Magic_Mountain_California.jpg/1024px-Six_Flag_Magic_Mountain_California.jpg?1488821544273"alt="Entrance of the park" width ="345">
+           
+           <br>
+           
+            San Diego Zoo. <br>
+           <img src = "https://upload.wikimedia.org/wikipedia/commons/6/69/SanDiegoZooSignOnStreet1.jpg"alt="San diego slogan written"width="345">
+           <br> 
+           Universal Studios Hollywood
+           </p>
+           
+           <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Universal_Studios_statue.jpg"alt="Statue of a cinematographer, camera operator, and boom operator at the entrance of the park."width="345">
+            
+           
+          
+           
+            
+            
+            
+           
+        
+            
+            
+            
+            
+            
+            
+        </ol>
+        
+        
+    </body>
+
+
+<h4> Poem </h4>
+    
+
+
+<p id="Eureka-song">
+Eurekaaaaa! here i am in Americaaaaa!<br>
+Here America in meeeee! <br>
+</p>
+<p id="Eureka-song2">
+Let's fly so high till we can find more to see... <br>
+Eureka.. Eureka.
+</p>
+</html>
+
+
+
         
         <p class="conclusion">
         Did you like my blog? If you did, then you can go ahead and type "YES" in the space bellow otherwise leave empty. 
